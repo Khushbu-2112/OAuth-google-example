@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+    <title>O-Auth-example</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/4efece833a.js"></script>
+    <style>
+        body { padding-top:80px; word-wrap:break-word; }
+    </style>
+</head>
+<body>
+
+    <div class="container text-center">
+        <h3 class="text-danger">Google   <span class="fa fa-google-plus"></span> </h3>
+        <br>
+        <div class="card mb-3 " style="max-width: 540px;margin: 0 auto;">
+            <div class="row no-gutters">
+              <div class="col-md-4 text-center">
+                <!-- <img src="..." class="card-img" alt="..."> -->
+                <i class="fa fa-user text-muted" style="margin-top: 20%;font-size: 8rem;" aria-hidden="true"></i>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body border-left border-info bg-light">
+                  <h5 class="card-title"><%= user.google.name %></h5>
+                  <p class="card-text">This page shows logged in users's profile form google account.</p>
+                  <p class="card-tex text-success"><%= user.google.email %></p>
+                  <p class="card-text"><small class="text-muted"><%= user.google.id %></small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="/logout" class="btn btn-primary btn-sm">Logout <i class="fa fa-sign-out" aria-hidden="true"></i> </a>
+    </div>
+<!-- 
+<div class="container">
+
+    <div class=" text-center">
+        <h1>Profile Page</h1>
+        <i class="fa fa-user fa-5x" aria-hidden="true"></i>
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-6">
+            <div class="well">
+                <h3 class="text-danger"><span class="fa fa-google-plus"></span> Google</h3>
+
+                    <p>
+                        <strong>id</strong>: <%= user.google.id %><br>
+                        <strong>token</strong>: <%= user.google.token %><br>
+                        <strong>email</strong>: <%= user.google.email %><br>
+                        <strong>name</strong>: <%= user.google.name %>
+                    </p>
+
+            </div>
+        </div>
+
+    </div>
+
+</div> -->
+</body>
+</html>
