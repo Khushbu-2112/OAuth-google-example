@@ -3,4 +3,4 @@ Oauth example in Node.js passport-google-oauth strategy.
 
 Create .env file with google credentials to run example correctly. 
 
-![Demo](demo/oautdemo.gif)
+![Demo](demo/oauthdemo.gif)
